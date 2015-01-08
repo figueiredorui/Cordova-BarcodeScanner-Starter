@@ -1,0 +1,17 @@
+<ion-view view-title="Scanner">
+    <ion-content>
+        <div class="list list-inset ">
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input ng-model="Data.Barcode" type="text" placeholder="">
+                </label>
+                <button class="button button-small" ng-click="Scan()">
+                    Scan
+                </button>
+            </div>
+            <div class="item energized" >
+                {{Data.Message}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
